@@ -1,12 +1,14 @@
-body {
-	max-width: 1920px;
-	margin: auto;
-}
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+
+body {
+	max-width: 1920px;
+	margin: auto;
+}
+
+header nav {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,22 +20,27 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
-	font-size: 26px;
+.name {
+	text-decoration: none;
 }
 
-.nav ul {
+.name h1 {
+	font-size: 26px;
+	color: #000000;
+}
+
+header nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+header nav ul li {
 	padding-inline: 10px;
 }
 
-.nav a {
+header nav ul li a {
 	text-decoration: none;
 	color: #000
 }
@@ -322,15 +329,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	header nav {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	header nav ul, header nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	header nav ul li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;

@@ -6,9 +6,9 @@
 	<meta name="description" content="Nina Carducci photographe professionnelle, shooting, retouches, album photos...">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
@@ -43,7 +43,9 @@
 <body>
 	<header>
 		<nav>
-			<a href="#" class="name"><h1 >Nina Carducci</h1></a>
+			<a href="#" class="name">
+				<h1 >Nina Carducci</h1>
+			</a>
 			
 			<ul class="nav">
 				<li>
@@ -65,8 +67,10 @@
 				</li>
 			</ul>
 		</nav>
-
-		<div id="header">
+	</header>
+	
+	<main>
+		<section id="header">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -79,7 +83,7 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100"
-							alt="Homme en costume marchant avec un sac" width="454" height="2100">
+							alt="Homme en costume marchant avec un sac" width="4540" height="2100">
 					</div>
 					<div class="carousel-item">
 						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
@@ -101,11 +105,9 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-		</div>
-	</header>
-	
-	<main>
-		<div id="about">
+		</section>
+
+		<section id="about">
 			<div class="picture left">
 				<img src="./assets/images/nina.webp" alt="Photo de Nina Carducci" width="1460" height="1456">
 			</div>
@@ -121,9 +123,9 @@
 					technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la
 					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
-		</div>
+		</section>
 	
-		<div id="gallery">
+		<section id="gallery">
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
@@ -168,9 +170,9 @@
 					<figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
 			</div>
-		</div>
+		</section>
 	
-		<div id="services">
+		<section id="services">
 			<h2 class="title">Mes services</h2>
 			<div class="container">
 				<div class="service">
@@ -203,14 +205,14 @@
 							album photo personnalisé</p>
 					</div>
 					<div class="service__price">
-						<h4>400€ album A4</h4>
+						<p>400€ album A4</p>
 						<span>30 pages recto/verso</span>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	
-		<div class="quote">
+		<section class="quote">
 			<figure>
 				<blockquote>
 					<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
@@ -218,11 +220,11 @@
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
-		</div>
+		</section>
 	</main>
 
 	<footer>
-		<div id="contact">
+		<section id="contact">
 			<div class="container">
 				<div class="form-container">
 					<h2>Une question ? Une demande de devis ?</h2>
@@ -241,10 +243,10 @@
 					<img src="./assets/images/camera.webp" alt="Appareil photo" width="2024" height="2020">
 				</div>
 			</div>
-		</div>
+		</section>
 	</footer>
 
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>

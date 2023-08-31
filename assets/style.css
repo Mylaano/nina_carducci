@@ -115,7 +115,8 @@ header nav ul li a {
 	background-color: transparent;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;

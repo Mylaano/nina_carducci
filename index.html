@@ -28,14 +28,21 @@
 
 	<script type="application/ld+json">
 		{
-		  "@context": "http://schema.org",
-		  "@type": "LocalBusiness",
-		  "name": "Nina Carducci",
-		  "image": "https://mylaano.github.io/nina_carducci/assets/images/nina.webp",
-		  "address": {
-			"@type": "PostalAddress",
-			"addressLocality": "Paris"
-		  }
+			"@context": "http://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci",
+			"image": "https://mylaano.github.io/nina_carducci/assets/images/nina.webp",
+			"telephone": "05 56 67 78 89",
+			"email": "nina.carducci@gmail.com",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200"
+			},
+			"openingHours": "Mo-Fr 10:00-19:00",
+			"url": "https://ninacarducci.github.io/",
+			"priceRange": "50€-350€-400€"
 		}
 	</script>
 </head>
@@ -128,34 +135,71 @@
 		<section id="gallery">
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
-				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-						alt="Photo d'un concert" width="2448" height="3264">
-					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-						alt="Homme d'affaire" width="4000" height="6000">
-					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-						alt="Femme souriante" width="4084" height="2764">
-					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-						alt="Mains qui s'unient" width="4453" height="3562">
-					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-						alt="Homme fermant les yeux" width="2211" height="3314">
-					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-						alt="Des mariés souriant" width="4480" height="6720">
-					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-						alt="Femme prenant une pose" width="4024" height="6048">
-					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-						alt="Chanteur à un concert" width="5233" height="3489">
-					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-						alt="Femme souriante" width="6000" height="3674">
+				<div class="gallery">
+					<ul class="my-4 tags-bar nav nav-pills">
+						<li class="nav-item">
+							<span class="nav-link active active-tag" data-images-toggle="all">Tous</span>
+						</li>
+						<li class="nav-item active">
+							<span class="nav-link" data-images-toggle="Concert">Concert</span>
+						</li>
+						<li class="nav-item active">
+							<span class="nav-link" data-images-toggle="Entreprises">Entreprises</span>
+						</li>
+						<li class="nav-item active">
+							<span class="nav-link" data-images-toggle="Mariages">Mariages</span>
+						</li>
+						<li class="nav-item active">
+							<span class="nav-link" data-images-toggle="Portrait">Portrait</span>
+						</li>
+					</ul>
+					<div class="gallery-items-row row">
+						<div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+							<img data-gallery-tag="Concert" class="gallery-item img-fluid"
+								src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo d'un concert" width="2448"
+								height="3264">
+							</div>
+						<div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+							<img data-gallery-tag="Entreprises" class="gallery-item img-fluid"
+								src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Homme d'affaire" width="4000"
+								height="6000">
+							</div>
+						<div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+							<img data-gallery-tag="Entreprises" class="gallery-item img-fluid"
+								src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="Femme souriante" width="4084"
+								height="2764">
+							</div>
+						<div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+							<img data-gallery-tag="Mariages" class="gallery-item img-fluid"
+								src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Mains qui s'unient" width="4453"
+								height="3562">
+							</div>
+						<div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+							<img data-gallery-tag="Portrait" class="gallery-item img-fluid"
+								src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Homme fermant les yeux"
+								width="2211" height="3314">
+							</div>
+						<div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+							<img data-gallery-tag="Mariages" class="gallery-item img-fluid"
+								src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Des mariés souriant" width="4480"
+								height="6720">
+							</div>
+						<div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+							<img data-gallery-tag="Portrait" class="gallery-item img-fluid"
+								src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Femme prenant une pose"
+								width="4024" height="6048">
+							</div>
+						<div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+							<img data-gallery-tag="Concert" class="gallery-item img-fluid"
+								src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Chanteur à un concert"
+								width="5233" height="3489">
+							</div>
+						<div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+							<img data-gallery-tag="Entreprises" class="gallery-item img-fluid"
+								src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Femme souriante"
+								width="6000" height="3674">
+						</div>
+					</div>
 				</div>
 			</div>
 	
@@ -182,7 +226,7 @@
 							Île-de-France pour réaliser vos photos</p>
 					</div>
 					<div class="service__price">
-						<h4>350€/demi journée</h4>
+						<p>350€/demi journée</p>
 						<span>Matériel, déplacement inclus</span>
 					</div>
 	
@@ -194,7 +238,7 @@
 							optimal pour vos publications</p>
 					</div>
 					<div class="service__price">
-						<h4>50€/photo</h4>
+						<p>50€/photo</p>
 						<span>2 AR par photo</span>
 					</div>
 				</div>
@@ -247,9 +291,7 @@
 	</footer>
 
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
+	<script src="./assets/scripts.min.js" defer></script>
 </body>
 
 </html>

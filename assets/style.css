@@ -45,6 +45,10 @@ header nav ul li a {
 	color: #000
 }
 
+.carousel-item img {
+	height: 100%;
+}
+
 .social-link img {
 	width: 20px;
 }
